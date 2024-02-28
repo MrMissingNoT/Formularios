@@ -10,3 +10,89 @@
 
   <header>Número incidencia: Q1167</header>
   <header>Fecha/Hora de recepción: 2019-05-17 12:16:21</header>
+  <h2>Formulario de Cliente</h2>
+<hr>
+<form action="/guardar_cliente" method="post">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" required><br><br>
+
+  <label for="tipo_identificacion">Tipo de Identificación:</label><br>
+  <select id="tipo_identificacion" name="tipo_identificacion" required>
+    <option value="CC..">CC..</option>
+    <option value="Carnet de Identidad">Carnet de Identidad</option>
+    <option value="Pasaporte">Pasaporte</option>
+
+  </select><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="identificacion">Identificación:</label><br>
+  <input type="text" id="identificacion" name="identificacion" required><br><br>
+
+  
+  <label for="tipo_solicitante">tipo de solicitante:</label><br>
+  <select id="tipo_solicitante" name="tipo_solicitante" required>
+    <option value="03-docente">03-docente</option>
+    <option value="02-alumnos">02-alumnos</option>
+    <option value="01-padres">01-padres</option>
+</select>
+<div>
+
+  <h4>Informacion de solicitud</h4>
+
+  <br><br>
+
+  <label for="Vencimineto">Fecha de vencimiento</label>
+  <input type="date" id="vencimiento" name="Fecha_vencimiento">
+
+  <br><br>
+
+  <label for="Asunto">Asunto</label>
+  <input type="text" name="Asunto" id="Asunto" pattern="[a-Z]" minlength="8" maxlength="30" required>
+
+  <br>
+
+  <label for="Descripcion">Descripcion</label>
+  <textarea name="Descripcion" id="Descripcion" cols="30" rows="10"></textarea pattern="[a-Z]" minlength="8" maxlength="30" required>
+
+  <br>
+
+  <label for="Adjunto">Adjunto</label>
+  <input type="file" id="Adjunto" name="Adjunto">
+
+  <br><br>
+
+  <label for="recepcion">Fecha/hora de recepcion</label>
+  <input type="text" value="2019-05-17 12:16:21">
+
+  <br><br>
+
+  <label for="N_identificacion">identificacion</label>
+  <input type="number" name="N_identificacion" id="N_identificacion">
+
+  <br><br>
+
+  <label for="Tipo_solicitante">Tipo de solicitante</label>
+  <select name="Tipo_solicitante" id="Tipo_solicitante"required>
+    <option value="">seleccionar</option>
+    <option value="Docente">Docente</option>
+    <option value="Normal">Normal</option>
+  </select>
+
+  <br><br>
+
+  <label for="Departamento">Departamento</label>
+  <input type="text" id="Departamento" name="Departamento" pattern="[a-Z]" minlength="8" maxlength="30">
+
+  <br><br>
+
+  <label for="Celular">Celular</label>
+  <input type="number" id="Celular" name="Celular">
+
+  <br><brs>
+
+  <label for="Direccion">Direccion</label>
+  <input type="text" name="Direccion" id="Direccion">
+
+      </div>
